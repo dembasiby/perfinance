@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PerFinance</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        #wrapper {
+            width: 100%;
+            max-width: 840px;
+            margin: 0 auto;
+            background: #ececec;
+            padding: 10px 30px;
+            text-align: justify;
+            box-sizing: border-box;
+        }
+        nav ul {
+            margin: 0 auto;
+        }
+        nav li {
+            display: inline-block;
+            padding: 5px;
+            text-transform: uppercase;
+        }
+        nav a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/expenses">All Expenses</a></li>
+            <li><a href="/revenues">All revenues</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/clear">clear</a></li>            
+        </ul>
+        </nav>
+        <main>
+            <%= yield %>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+    
+</body>
+</html>
