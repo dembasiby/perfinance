@@ -1,0 +1,10 @@
+<ul>
+    <% @revenues.each do |revenu| %>
+    <li>
+        <%= revenu %>
+    </li>
+    <% end %>
+</ul>
+
+<p><%= @total %></p>
+<a href="/revenues/new">Ajouter un revenu</a>
